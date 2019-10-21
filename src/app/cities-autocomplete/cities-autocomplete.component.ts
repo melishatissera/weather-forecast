@@ -31,8 +31,10 @@ export class CitiesAutocompleteComponent implements OnInit {
     for (let i = 1; i < lines.length; i++) {
       let obj = {};
       let currentLine = lines[i].split(",");
-      for (let j = 0; j < headers.length; j++) {
+      let j = 0;
+      while (j < headers.length) {
         obj[headers[j]] = currentLine[j];
+        j++;
       }
       this.countries.push(obj);
     }
