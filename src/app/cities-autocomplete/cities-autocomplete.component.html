@@ -1,0 +1,4 @@
+<input autocomplete="off" ngui-auto-complete [source]="this.countries" min-chars="1" list-formatter="name"
+  display-property-name="name" no-match-found-text=" " required type="text" class="form-control" [(ngModel)]="name">
+
+<button type="button" class="btn btn-success" (click)="searchCountry(name)">Success</button>
